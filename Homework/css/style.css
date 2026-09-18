@@ -1,0 +1,82 @@
+body {
+  font-family: sans-serif;
+  background-color: #eeeeee;
+  color: black;
+  padding: 20px;
+}
+
+body.dark-theme {
+  background-color: #222222;
+  color: white;
+}
+body.dark-theme .profile-card {
+  background-color: #444444;
+  border-color: white;
+}
+body.dark-theme input {
+  background-color: #555;
+  color: white;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.profile-card {
+  background-color: white;
+  border: 2px solid black;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#foto-profil {
+  width: 130px !important;
+  height: 130px !important;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid black;
+  display: block;
+  margin-bottom: 15px;
+}
+body.dark-theme #foto-profil {
+  border-color: white;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  border: 1px solid darkblue;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+button:disabled {
+  background-color: gray;
+}
+button.btn-hapus {
+  background-color: red;
+  border-color: darkred;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#status[data-state="loading"] { color: blue; font-style: italic; }
+#status[data-state="error"] { color: red; font-weight: bold; }
+.error { color: red; display: block; margin-top: 5px; font-size: 14px; }
+[aria-invalid="true"] { border: 2px solid red; }
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+li {
+  margin-bottom: 10px;
+}
+.li-container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted gray;
+  padding-bottom: 5px;
+}

@@ -1,0 +1,10 @@
+{
+  "nama": "Sahizidan Lukmann Hakim",
+  "foto": "Foto-Profil.jpeg",
+  "bio": " Mahasiswa D3 Teknik Informatika Politeknik Negeri Bandung .",
+  "keterampilan": [
+    { "id": 1, "nama": "HTML " },
+    { "id": 2, "nama": "CSS " },
+    { "id": 3, "nama": "JavaScript" }
+  ]
+}

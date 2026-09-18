@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tugas Profil Interaktif</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <button id="toggle-tema" type="button">Ubah Tema Gelap/Terang</button>
+
+    <div class="profile-card">
+      <div id="status-container">
+        <p id="status" data-state="idle" role="status" aria-live="polite">Belum ada proses.</p>
+        <button id="coba-lagi" type="button" class="hidden">Coba Lagi</button>
+      </div>
+
+      <div id="profile-content" class="hidden">
+        <!-- Elemen Gambar Foto Profil -->
+        <img id="foto-profil" src="" alt="Foto Profil" class="hidden">
+        
+        <h1 id="nama-profil">Nama</h1>
+        
+        <button id="toggle-detail" type="button" aria-expanded="false">Tampilkan Bio</button>
+        <div id="bio-profil" class="hidden">
+          <p id="teks-bio">Teks bio di sini...</p>
+        </div>
+
+        <hr>
+
+        <h2>Keterampilan Saya</h2>
+        <form id="form-skill" novalidate>
+          <label for="input-skill">Tambah Keterampilan:</label><br>
+          <input type="text" id="input-skill">
+          <button type="submit">Tambah</button>
+          <small id="error-skill" class="error"></small>
+        </form>
+
+        <p id="status-skill" role="status" class="hidden">Data keterampilan kosong.</p>
+        <ul id="daftar-skill"></ul>
+      </div>
+    </div>
+  </div>
+  <script src="js/app.js" defer></script>
+</body>
+</html>

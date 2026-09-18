@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zidan Decant</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <p>Zidan Decant</p>
+
+    <button
+      id="navToggle"
+      class="nav-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="navMenu"
+    >
+      ☰ Menu
+    </button>
+
+    <nav id="navMenu" class="nav-menu">
+      <a href="#beranda">Beranda</a>
+      <a href="#varian">Varian</a>
+      <a href="#faq">FAQ</a>
+      <a href="#form-kontak">Kontak</a>
+      <button id="themeToggle" class="theme-toggle" type="button">
+        🌙 Tema Gelap
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="beranda">
+      <h1>Coba Parfum Branded dalam Ukuran Kecil</h1>
+
+      <p>Decant parfum, cium wangi parfum branded tanpa bikin dompet jebol.</p>
+
+      <a href="#varian" class="button">Lihat Varian</a>
+    </section>
+
+    <section id="manfaat">
+      <h2>Kenapa Harus Zidan Decant?</h2>
+      <div class="feature-card">
+        <h3>100% Original</h3>
+        <p>Berasal langsung dari botol asli tanpa campuran alkohol tambahan.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Hemat Budget</h3>
+        <p>dapat mencoba aroma parfum branded tanpa harus beli botol besar.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Banyak Pilihan Brand</h3>
+        <p>Tersedia berbagai brand parfum terkenal.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Kemasan Higienis</h3>
+        <p>Dikemas rapi dan aman menggunakan botol spray kecil.</p>
+      </div>
+    </section>
+
+    <section id="varian">
+      <h2>Pilihan Varian & Harga</h2>
+
+      <div class="filter-bar" id="filterBar">
+        <button type="button" class="filter-btn is-active" data-kategori="semua">Semua</button>
+        <button type="button" class="filter-btn" data-kategori="pria">Pria</button>
+        <button type="button" class="filter-btn" data-kategori="wanita">Wanita</button>
+        <button type="button" class="filter-btn" data-kategori="unisex">Unisex</button>
+      </div>
+
+      <div class="product-list" id="productList">
+      </div>
+
+      <p id="emptyMessage" class="empty-message" hidden>
+        Belum ada varian pada kategori ini.
+      </p>
+    </section>
+
+    <section id="cara-pesan">
+      <h2>Cara Pemesanan</h2>
+      <ol>
+        <li>Pilih varian parfum yang ingin kamu coba.</li>
+        <li>Klik tombol WhatsApp di bawah untuk chat dengan admin.</li>
+        <li>Lakukan pembayaran dan tunggu parfum tiba di tujuan</li>
+      </ol>
+    </section>
+
+    <section id="faq">
+      <h2>FAQ</h2>
+
+      <div class="faq-list" id="faqList">
+        <div class="faq-item">
+          <h3>
+            <button
+              type="button"
+              class="faq-question"
+              id="faq-toggle-1"
+              aria-expanded="false"
+              aria-controls="faq-answer-1"
+            >
+              Apakah parfum decant ini original?
+            </button>
+          </h3>
+          <div
+            id="faq-answer-1"
+            class="faq-answer"
+            role="region"
+            aria-labelledby="faq-toggle-1"
+            hidden
+          >
+            <p>Ya, semua decant diambil langsung dari botol parfum asli tidak dicampurkan alkohol tambahan.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3>
+            <button
+              type="button"
+              class="faq-question"
+              id="faq-toggle-2"
+              aria-expanded="false"
+              aria-controls="faq-answer-2"
+            >
+              Berapa lama proses pengiriman?
+            </button>
+          </h3>
+          <div
+            id="faq-answer-2"
+            class="faq-answer"
+            role="region"
+            aria-labelledby="faq-toggle-2"
+            hidden
+          >
+            <p>Pesanan diproses 1x24 jam setelah pembayaran dikonfirmasi, lalu dikirim melalui kurir pilihanmu.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3>
+            <button
+              type="button"
+              class="faq-question"
+              id="faq-toggle-3"
+              aria-expanded="false"
+              aria-controls="faq-answer-3"
+            >
+              Apakah bisa request ukuran botol lain?
+            </button>
+          </h3>
+          <div
+            id="faq-answer-3"
+            class="faq-answer"
+            role="region"
+            aria-labelledby="faq-toggle-3"
+            hidden
+          >
+            <p>Bisa. Chat admin melalui WhatsApp untuk menanyakan ukuran 3ml, 5ml, atau 10ml sesuai stok yang tersedia.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3>
+            <button
+              type="button"
+              class="faq-question"
+              id="faq-toggle-4"
+              aria-expanded="false"
+              aria-controls="faq-answer-4"
+            >
+              Bagaimana cara pembayarannya?
+            </button>
+          </h3>
+          <div
+            id="faq-answer-4"
+            class="faq-answer"
+            role="region"
+            aria-labelledby="faq-toggle-4"
+            hidden
+          >
+            <p>Pembayaran dapat dilakukan via transfer bank atau e-wallet, detail akan diberikan admin saat chat WhatsApp.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="form-kontak">
+      <h2>Form Kontak & Pemesanan</h2>
+
+      <form id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="nama">Nama</label>
+          <input type="text" id="nama" name="nama">
+          <span class="error-message" id="error-nama"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="whatsapp">Nomor WhatsApp</label>
+          <input type="tel" id="whatsapp" name="whatsapp" placeholder="08xxxxxxxxxx">
+          <span class="error-message" id="error-whatsapp"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="pesan">Pesan</label>
+          <textarea id="pesan" name="pesan" rows="4"></textarea>
+          <span class="error-message" id="error-pesan"></span>
+        </div>
+
+        <button type="submit" class="button">Kirim Pesan</button>
+
+        <p id="formSuccess" class="form-success" role="status" hidden>
+          Pesan berhasil dikirim! Admin akan segera menghubungimu.
+        </p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer id="kontak">
+    <p>Siap untuk wangi seharian? Hubungi kami sekarang!</p>
+    <a href="https://wa.me/6281223006038" target="_blank" rel="noopener noreferrer" class="button">Chat via WhatsApp</a>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" type="button" aria-label="Kembali ke atas" hidden>
+    ↑
+  </button>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
